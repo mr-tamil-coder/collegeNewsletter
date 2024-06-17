@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        overflow-x: hidden;
+        width: 100vw;
+        height: 100vh;
+      }
+      :root {
+        --bg-color: #2b387e;
+        --border-color: #3ab7c9;
+      }
+      .container {
+        clip-path: polygon(0 0, 100% 0, 100% 71%, 0% 100%);
+        background-color: red;
+        width: 100vw;
+        height: 100vh;
+      }
+      .header {
+        background-color: var(--bg-color);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .header .title {
+        padding: 20px;
+        color: white;
+        text-align: center;
+      }
+      .title {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+      .clg-name {
+        text-transform: uppercase;
+      }
+      .header {
+        padding: 20px;
+        color: white;
+      }
+      .title {
+        margin-bottom: 20px;
+      }
+      .logos {
+        display: flex;
+        justify-content: center;
+      }
+      .logos img{
+        padding: 20px;
+        width: 150px;
+        height: 150px;
+      }
+      .college-logo {
+        max-width: 100%;
+      }
+      .diagonal-container {
+        position: relative;
+        width: 100%;
+        height: 34%; /*to change the left to right 
+        /* overflow: hidden; */
+      }
+
+      .diagonal-right-to-left {
+      
+        position: absolute;
+        /* background-size: cover; */
+        /* background-color: antiquewhite; */
+        width: 100%; /* Cover full width */
+    height: 180%; /* Cover full height */
+    transform: rotate(-11.5deg); /* Adjust the angle as needed */
+    transform-origin: bottom right; /* Ensure rotation originates from the right */
+    top: -55%; /* Start from top */
+    right: 0; /* Start from right */
+    /* background-image: url('./designNewsletter/img/rightToLeft2.png'); */
+      }
+
+      .diagonal-left-to-right {
+        position: absolute;
+        background-size: cover;
+        width: 89%;
+        height: 120%;
+        transform: rotate(5deg);
+        transform-origin: 0 0;
+        top: -25%;/*to make the big decreases */
+        left: 0;
+      }
+
+
+      .footer {
+        position: absolute;
+        bottom: 50px;
+        width: 100%;
+        /* background-color: green; */
+        text-align: center;
+      }
+      .content {
+        padding: 20px;
+        color: rgb(13, 13, 13);
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        text-transform: uppercase;
+        margin-left: 80px;
+      }
+      .content h2 {
+        letter-spacing: 1px;
+      }
+      .content h4 {
+        text-transform: capitalize;
+        letter-spacing: 1px;
+      }
+      .diagonal-container {
+        background-color: aqua;
+      }
+      .diagonal-right-to-left img {
+        position: relative;
+        
+        width: 130%; 
+        height: 100%; 
+        background-size: cover;
+        background-blend-mode:color-burn;
+      }
+      .diagonal-left-to-right img {
+        width: 90%;
+        height: auto;
+        background-size: cover;
+        
+      }
+
+.images{
+  background-color: black;
+  
+}
+
+.set {
+    position: absolute;
+    width: 140%; /* Increased to cover the gap when rotated */
+    height: 30%; /* Increased to cover the gap when rotated */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: rotate(45deg);
+}
+
+.rotated-image {
+    width: auto;
+    height: 20%; /* Keeps the height to 20% of the container */
+    transform: rotate(-45deg); /* Counter-rotate the images */
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="title">
+          <h1 class="clg-name">Jerusalem College of Engineering</h1>
+          <p>(An Autonomous Institution)</p>
+          <p>Narayanapuram, Pallikaranai, Chennai 600100</p>
+        </div>
+        <div class="logos">
+          <img
+            src="./designNewsletter/img/jceLogo.png"
+            alt="College Logo"
+            class="college-logo"
+          />
+        </div>
+      </div>
+      <div class="diagonal-container">
+       
+        <div class="diagonal-right-to-left">
+          <!-- <div class="set">
+            
+            <img src="./designNewsletter/img/clg-img.jpg" alt="Image 1" class="rotated-image">
+            <img src="./designNewsletter/img/grade.png" alt="Image 2" class="rotated-image">
+        
+          </div> -->
+            <img src="./designNewsletter/img/rightToLeft2.png" alt="">
+        </div>
+        <div class="diagonal-left-to-right">
+            <img src="./designNewsletter/img/leftToRight.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="content">
+        <h2>Newsletter</h2>
+        <h4>January 2022 - June 2022</h4>
+      </div>
+    </div>
+  </body>
+</html>
