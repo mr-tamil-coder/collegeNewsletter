@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clip-Path CSS property</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      :root {
+        --bg-color: #2b387e;
+        --border-color: #3ab7c9;
+      }
+
+      .container {
+        background-color: var(--bg-color);
+        padding: 20px;
+      }
+
+      .custom-shape {
+        width: 400px;
+        height: 400px;
+        background-color: var(--border-color);
+        clip-path: polygon(
+          46% 0,
+          85% 12%,
+          100% 45%,
+          90% 83%,
+          57% 100%,
+          12% 86%,
+          2% 53%,
+          11% 20%
+        );
+        position: relative;
+        margin: 7px 9px 0 7px;
+      }
+
+      .custom-shape img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        clip-path: inherit;
+      }
+
+      .inner {
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      .outer {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      @media (max-width: 500px) {
+        .custom-shape {
+          width: 300px;
+          height: 300px;
+        }
+      }
+
+      @media (max-width: 300px) {
+        .custom-shape {
+          width: 200px;
+          height: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inner">
+        <div class="item custom-shape odd">
+          <img src="./img/logo/logo22.png" alt="Image 1" />
+        </div>
+      </div>
+
+      <div class="outer">
+        <div class="item custom-shape even">
+          <img src="./img/logo/logo22.png" alt="Image 3" />
+        </div>
+      </div>
+
+      <div class="inner">
+        <div class="item custom-shape odd">
+          <img src="./img/jce.png" alt="Image 3" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
