@@ -59,9 +59,8 @@ margin-top: 50px;
   
   .marquee {
     display: inline-block;
-    white-space: nowrap;
-    animation: marquee 10s linear infinite;
-    font-size: 20px;
+    font-size: 14px;
+    padding: 10px;
     font-weight: bold;
   }
   .logo-container {
