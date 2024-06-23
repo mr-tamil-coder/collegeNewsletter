@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*{
+  padding: 0;
+  margin: 0;
+}
+:root{
+  --bg-color: #2b387e;
+
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    clip-path: polygon(0 0, 100% 0%, 100% 93%, 0% 100%);
+  }
+  
+  .header {
+    background: url('./img/clg-img.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    position: relative;
+    padding: 50px 0;
+  }
+  
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+  }
+  .clg-name {
+    text-transform: uppercase;
+    font-size: 27px;
+    color: white;
+  }
+  .title p{
+    margin-bottom: 0 !important;
+  }
+  .address{
+    font-size: 15px;
+  }
+
+  .marquee-container {
+    overflow: hidden;
+    position: relative;
+    background: #6a11cb;
+    color: white;
+    padding: 10px 0;
+    margin-bottom: 20px;
+  }
+  
+  .marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .logo-container {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for logo */
+    border-radius: 50%;
+    padding: 10px;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    max-width: 150px;
+  }
+  
+  .grade-badge {
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    background: #ff5722;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+  }
+  
+  .header h1,
+  .header p {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .achievements {
+    padding: 50px 0;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+  
+  .achievement-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  }
+  
+  .achievement-card h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #6a11cb;
+  }
+  
+  .circle-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .rounded-circle {
+    border-radius: 50% !important;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 767px) {
+    .rounded-circle {
+      width: 350px;
+      height: 350px;
+    }
+  }
+  
+  .float-left {
+    float: left;
+    margin-right: 10px;
+  }
+  
+  .float-right {
+    float: right;
+    margin-left: 10px;
+  }
+  
+  .order-md-1 {
+    order: 1;
+  }
+  
+  .order-md-2 {
+    order: 2;
+  }
+  @media (max-width:768px) {
+    /* medium */
+    body{
+      /* background-color: rgb(128, 0, 66); */
+    }
+  }
+  @media (max-width:992px) {
+    /* large */
+    body{
+      /* background-color: rgb(0, 2, 128); */
+    }
+  }
+  
+  @media (max-width:576px) {
+    /* small */
+    body{
+      /* background-color: red; */
+    }
+    .clg-name{
+      font-size: 22px;
+      color: white;
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+    }
+  }
