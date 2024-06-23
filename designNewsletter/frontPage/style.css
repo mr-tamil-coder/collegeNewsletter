@@ -43,6 +43,7 @@ body {
   }
   .address{
     font-size: 15px;
+    text-align: center;
   }
 
   .marquee-container {
